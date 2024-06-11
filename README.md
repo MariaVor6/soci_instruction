@@ -34,5 +34,6 @@ git clone https://github.com/SOCI/soci.git
 Библиотеки ни одной из БД(Базы данных) не найдены и доступа к их функциям нет. В моём случае меня интересует конкретно БД Postgresql.
 Для решения проблемы я прописала следующую команду:
 > cmake -G "Visual Studio 17" -DWITH_BOOST=OFF -DCMAKE_BUILD_TYPE=RELEASE -DSOCI_CXX11=ON -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_DB2=OFF -DWITH_FIREBIRD=OFF -DWITH_MYSQL=OFF -DWITH_ODBC=OFF -DWITH_ORACLE=OFF -DWITH_POSTGRESQL=ON -DPOSTGRESQL_INCLUDE_DIR=C:\Program Files\PostgreSQL\15\include -DPOSTGRESQL_LIBRARY=C:\Program Files\PostgreSQL\15\lib\libpq.lib -DWITH_SQLITE3=OFF C:\Users\Сервис\source\repos\soci
+
 Здесь мы прописываем путь к include и lib, причём при указании lib выписываем путь к конкретной библиотеке libpq.lib. 
 
