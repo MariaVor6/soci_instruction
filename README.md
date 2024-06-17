@@ -15,7 +15,7 @@ git clone https://github.com/SOCI/soci.git
 5. В нашей папке soci создаём директорию(папку) с именем build. Для этого используем команду  mkdir build.
 Выглядит это следующим образом:
 > C:\Users\Сервис\source\repos\soci>mkdir build
-6. Далее уже по изветсной нам команде переходим в папку build.
+6. Далее уже по известной нам команде переходим в папку build.
 > C:\Users\Сервис\source\repos\soci>cd build
 7. Далее прописывааем команду cmake .. . Это позволит нам собрать исходный код. Если CMake не установлен, его надо установить.
 > CMake — кроcсплатформенная утилита для автоматической сборки программы из исходного кода. Установить можно здесь: <https://cmake.org/>
@@ -36,6 +36,6 @@ git clone https://github.com/SOCI/soci.git
 > cmake -G "Visual Studio 17" -DWITH_BOOST=OFF -DCMAKE_BUILD_TYPE=RELEASE -DSOCI_CXX11=ON -DCMAKE_VERBOSE_MAKEFILE=ON -DWITH_DB2=OFF -DWITH_FIREBIRD=OFF -DWITH_MYSQL=OFF -DWITH_ODBC=OFF -DWITH_ORACLE=OFF -DWITH_POSTGRESQL=ON -DPOSTGRESQL_INCLUDE_DIR=C:\Program Files\PostgreSQL\15\include -DPOSTGRESQL_LIBRARY=C:\Program Files\PostgreSQL\15\lib\libpq.lib -DWITH_SQLITE3=OFF C:\Users\Сервис\source\repos\soci
 
 Здесь мы прописываем путь к include и lib, причём при указании lib выписываем путь к конкретной библиотеке libpq.lib. 
-9. Последняя команда для сборки cmake --build .
+9. Последняя команда для сборки cmake --build . Обратите внимание на правильность написания команды, после build перед точкой идёт пробел.
 
 
